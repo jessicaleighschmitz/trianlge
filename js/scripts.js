@@ -6,10 +6,11 @@ $(document).ready(function() {
     var side3 = parseInt($('input#side3').val());
     var result;
 
-    if (side1 === side2 && side1 === side3) {
+    if ((side1 + side2) >= side3 || (side1 + side3) >= side2 || (side2 + side3) >= side1) {
+      $("#equilateral").hide();
       $("#isosceles").hide();
       $("#scalene").hide();
-      $("#equilateral").show();
+      $("#not-triangle").show();
     } else if (side1 === side2 && side1 !==side3 || side2 === side3 && side2 !==side1 || side1 === side3 && side1 !== side2) {
       $("#equilateral").hide();
       $("#scalene").hide();
@@ -19,13 +20,12 @@ $(document).ready(function() {
       $("#not-triangle").hide();
       $("#isosceles").hide();
       $("#scalene").show();
-    } else if (side1 + side2 > side3 || side1 + side3 > side2 || side2 + side3 > side1) {
-      $("#equilateral").hide();
-      $("#isosceles").hide();
-      $("#scalene").hide();
-      $("#not-triangle").show();
-
-    }
+    } else if (side1 === side2 && side1 === side3) {
+        $("#isosceles").hide();
+        $("#not-triangle").hide();
+        $("#scalene").hide();
+        $("#equilateral").show();
+    };
   });
 
 
