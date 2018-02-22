@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangle</title>
+</head>
+<body>
+<div id="container">
+  <form id="form">
+    <div class="side">
+      <label for="side1">Side 1</label>
+      <input id="side1" type="text">
+    </div>
+    <div class="side">
+      <label for="side2">Side 2</label>
+      <input id="side2" type="text">
+    </div>
+    <div class="side">
+      <label for="side3">Side 3</label>
+      <input id="side3" type="text">
+    </div>
+    <div class="submit">
+        <input type="submit" value="submit" />
+    </div>
+
+  </form>
+</div>
+<div id="equilateral">
+  <p>
+    The three sides are all equal so you have an equilateral triangle.
+  </p>
+  <img src="http://mathworld.wolfram.com/images/eps-gif/EquilateralTriangle_1000.gif" alt="equilateral triangle" />
+
+</div>
+<div id="isosceles">
+  <p>
+    Two sides of the triangle are exactly equal, therefore you have an isosceles triangle.
+  </p>
+  <img src="https://d2gne97vdumgn3.cloudfront.net/api/file/oAi5UTQZqlnrusfoF3Qz" alt="isosceles triangle" />
+</div>
+<div id="scalene">
+  <p>
+    No sides of this triangle are equal making it a scalene triangle.
+  </p>
+  <img src="https://www.homeschoolmath.net/teaching/g/g-img/scalene-triangle.gif" alt='scalene triangle' />
+</div>
+<div id="not-triangle">
+  <p>
+    The lengths of the sides that you entered in cannot make a trianlge at all! No triangle here!
+  </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.side {
+  margin: 20px;
+}
+.submit {
+  margin: 20px;
+}
+#equilateral, #isosceles, #scalene, #not-triangle {
+  display: none;
+}
